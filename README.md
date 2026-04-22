@@ -58,16 +58,16 @@ customers ──────< orders ──────< order_items >───�
 
 ## How to Run
 
-1. Open your SQL client (MySQL Workbench, DBeaver, or similar)
+1. Open SSMS (SQL Server Management Studio)
 2. Run the full script in order — schema first, then data, then queries
-3. To test the stored procedure: `CALL GetSalesSummary('2023-01-01', '2023-12-31');`
+3. To test the stored procedure: `EXEC GetSalesSummary @start_date = '2023-01-01', @end_date = '2023-12-31';`
 
 ---
 
 ## Tools Used
 
-- **MySQL** — database and query execution
-- **MySQL Workbench** — development environment
+- **SQL Server** — database and query execution
+- **SSMS (SQL Server Management Studio)** — development environment
 
 ---
 
